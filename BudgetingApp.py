@@ -86,7 +86,7 @@ while (check == True):
     if (WhatToDo == 1):
         while (check == True):
             WhatToDo = int(input(
-                "What Operation do you want to perform:\n1) Deposit to food Balance  \n2) Deposit to clothing Balance \n3) Deposit to entertainment Balance\n4) Exit Program\n0)Back\nType here:  "))
+                "What Operation do you want to perform:\n1) Deposit to food Account  \n2) Deposit to clothing Account \n3) Deposit to entertainment Account\n4) Exit Program\n0)Back\nType here:  "))
             if (WhatToDo == 1):
                 amount = int(input("Enter your money: "))
                 foodAcc = food.deposit(amount)
@@ -115,7 +115,7 @@ while (check == True):
     elif (WhatToDo == 2):
         while (check == True):
             WhatToDo = int(input(
-                "What Operation do you want to perform:\n1) Withdraw from food Balance  \n2) Withdraw from clothing Balance \n3) Withdraw from entertainment Balance\n4) Exit Program \n0) Back \nType here: "))
+                "What Operation do you want to perform:\n1) Withdraw from food Account  \n2) Withdraw from clothing Account \n3) Withdraw from entertainment Account\n4) Exit Program \n0) Back \nType here: "))
             if (WhatToDo == 1):
                 amount = float(input("Enter your money: "))
                 foodAcc = food.withdraw(amount)
@@ -143,7 +143,7 @@ while (check == True):
     elif (WhatToDo == 3):
         while (check == True):
             WhatToDo = int(input(
-                "What Operation do you want to perform:\n1) Check food Balance  \n2) Check clothing Balance \n3) Check entertainment Balance\n4) Exit Program \n0) Back \nType here: "))
+                "What Operation do you want to perform:\n1) Check food Account  \n2) Check clothing Account \n3) Check entertainment Account\n4) Exit Program \n0) Back \nType here: "))
             if (WhatToDo == 1):
                 foodAcc = food.checkBalance()
                 print("Your food Balance is: GH₵", foodAcc)
